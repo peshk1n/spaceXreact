@@ -16,4 +16,4 @@ function LaunchList(props) {
     )
 }
 
-export {LaunchList}
+export { LaunchList }

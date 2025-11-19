@@ -1,19 +1,36 @@
 {
   "name": "spacexeng",
-  "version": "1.0.0",
+  "private": true,
+  "version": "1.1.0",
+  "type": "module",
   "description": "Demo page for SpaceX API",
   "scripts": {
-    "start": "parcel index.html",
-    "build": "parcel build index.html --dist-dir docs --no-source-maps --public-url ./"
+    "dev": "vite",
+    "build": "vite build",
+    "lint": "eslint .",
+    "preview": "vite preview"
   },
-  "author": "wolwer1ne",
+  "author": {
+    "name": "wolwer1ne"
+  },
+  "maintainers": [
+    "cooliron2311"
+  ],
   "license": "MIT",
-  "devDependencies": {
-    "parcel": "^2.7.0"
-  },
   "dependencies": {
-    "d3": "^7.6.1",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "d3": "^7.9.0",
+    "react": "^19.2.0",
+    "react-dom": "^19.2.0"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.39.1",
+    "@types/react": "^19.2.2",
+    "@types/react-dom": "^19.2.2",
+    "@vitejs/plugin-react": "^5.1.0",
+    "eslint": "^9.39.1",
+    "eslint-plugin-react-hooks": "^7.0.1",
+    "eslint-plugin-react-refresh": "^0.4.24",
+    "globals": "^16.5.0",
+    "vite": "^7.2.2"
   }
 }
