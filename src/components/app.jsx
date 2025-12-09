@@ -21,7 +21,7 @@ function App() {
 
     return (
         <main className='main'>
-            <LaunchList launches={launches} launchpads={launchpads} />
+            <LaunchList launches={launches} /> 
             <Map launchpads={launchpads} />
         </main>
     )

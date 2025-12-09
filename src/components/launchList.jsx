@@ -1,6 +1,6 @@
 import * as d3 from "d3";
 
-function LaunchList({ launches }) {
+function LaunchList(props) {
 
     const handleMouseOver = (launch) => {
         const padCircle = d3.select(`#launchpad-${launch.launchpad}`);
@@ -21,7 +21,7 @@ function LaunchList({ launches }) {
             <h3>Launches</h3>
             <div id="listContainer">
                 <ul>
-                    {launches.map(launch => (
+                    {props.launches.map(launch => (
                         <li
                             key={launch.id}
                             onMouseOver={() => handleMouseOver(launch)}

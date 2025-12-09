@@ -4,7 +4,7 @@ import { useRef, useEffect } from "react";
 
 function Map({ launchpads }) {
     const width = 1000;
-    const height = 600;
+    const height = 650;
     const margin = {
         top: 20,
         right: 20,
@@ -23,7 +23,7 @@ function Map({ launchpads }) {
         const g = svg.append("g");
 
         const projection = d3.geoMercator()
-            .scale(70)
+            .scale(90)
             .center([0, 20])
             .translate([width / 2 - margin.left, height / 2 - margin.top]);
 
